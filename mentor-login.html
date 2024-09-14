@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentor Signup</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2 class="text-center">Mentor Signup</h2>
+  <form action="mentor-dashboard.html" method="post">
+    <!-- Personal Information Section -->
+    <div class="mb-3">
+      <label for="mentorName" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="mentorName" placeholder="Enter your full name" required>
+    </div>
+    <div class="mb-3">
+      <label for="mentorEmail" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="mentorEmail" placeholder="Enter your email" required>
+    </div>
+    <div class="mb-3">
+      <label for="mentorPassword" class="form-label">Password</label>
+      <input type="password" class="form-control" id="mentorPassword" placeholder="Create a password" required>
+    </div>
+
+    <!-- Professional and Academic Experience Section -->
+    <div class="mb-3">
+      <label for="mentorExperience" class="form-label">Academic and Professional Experience</label>
+      <textarea class="form-control" id="mentorExperience" rows="3" placeholder="Describe your academic qualifications and work experience." required></textarea>
+    </div>
+
+    <!-- Skills and Interests Section -->
+    <div class="mb-3">
+      <label for="mentorSkills" class="form-label">Skills</label>
+      <input type="text" class="form-control" id="mentorSkills" placeholder="E.g., Web Development, AI, Cloud Computing" required>
+    </div>
+    <div class="mb-3">
+      <label for="mentorInterests" class="form-label">Interests</label>
+      <textarea class="form-control" id="mentorInterests" rows="3" placeholder="What areas are you interested in mentoring?" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-secondary w-100">Sign Up</button>
+  </form>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
