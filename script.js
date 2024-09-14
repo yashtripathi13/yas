@@ -24,4 +24,22 @@ document.addEventListener('click', (event) => {
         dropdownMenu.classList.remove('active');
     }
 });
+function bookMentor1() {
+    window.location.href = 'mentor1.html';
+}
+function bookMentor2() {
+    window.location.href = 'mentor2.html';
+}
+function bookMentor3() {
+    window.location.href = 'mentor3.html';
+}
+function bookMentor4() {
+    window.location.href = 'mentor4.html';
+}
+function bookMentor5() {
+    window.location.href = 'mentor5.html';
+}
+function bookMentor6() {
+    window.location.href = 'mentor6.html';
+}
 

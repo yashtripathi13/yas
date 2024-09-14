@@ -88,15 +88,15 @@
                     <i class="fas fa-bars"></i>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a href="#">Announcements</a></li>
-                            <li><a href="#">Mentors</a></li>
-                            <li><a href="#">Clubs</a></li>
-                            <li><a href="#">Feedback History</a></li>
+                            <li><a href="announcement.html">Announcements</a></li>
+                            <li><a href="mentors.html">Mentors</a></li>
+                            <li><a href="club.html">Clubs</a></li>
+                            <li><a href="feedback.html">Feedback History</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="logo">
-                    <h1>Mentorship Platform</h1>
+                    <h1>SEE-MenTo</h1>
                 </div>
             </div>
             <div class="navbar-right">
@@ -104,6 +104,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="mentors.html">Mentors</a></li>
+                    <!-- New Mentee Button -->
+                    <li><a href="mentee.html">Mentee</a></li>
                     <li><a href="book-session.html">Book a Session</a></li>
                 </ul>
                 <div class="search-container">
@@ -111,10 +113,10 @@
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </div>
                 <div class="notification">
-                    <a href="#"><i class="fas fa-bell"></i></a>
+                    <a href="announcement.html"><i class="fas fa-bell"></i></a>
                 </div>
                 <div class="profile-dropdown">
-                    <img src="img/profile.png" alt="Profile Picture" class="profile-icon">
+                    <img src="img/profile.jpg" alt="Profile Picture" class="profile-icon">
                     <div class="dropdown-content">
                         <a href="login.html">Login</a>
                         <a href="sign-up.html">Sign Up</a>
@@ -122,10 +124,8 @@
                 </div>
             </div>
         </nav>
-        <nav class="navbar">
-            <!-- Navbar content here -->
-        </nav>
     </header>
+
 
     <main>
         <h1>Meet Our Mentors</h1>
@@ -140,7 +140,7 @@
                     <h3>Web Developer</h3>
                     <p>Pursuing 3rd year of Computer Science at Mumbai University.</p>
                     <p>Rohit has done a full-time Web Development course and several internships.</p>
-                    <button>Contact Mentor</button>
+                    <button onclick="bookMentor1()">BOOK MENTOR</button>
                 </div>
             </div>
             
@@ -152,9 +152,8 @@
                     <h3>Cyber Security</h3>
                     <p>Pursuing 3rd year of Computer Science at Mumbai University.</p>
                     <p>Aditya knows about cyber security and has done several internships based on it.</p>
-                    <a href="mentor1info.html">
-                        <button>Contact Mentor</button>
-                    </a>
+                    
+                        <button onclick="bookMentor2()">BOOK MENTOR</button>
                 </div>
             </div>
 
@@ -164,54 +163,55 @@
                 <div class="mentor-info">
                     <h2>Satya Prakash</h2>
                     <h3>Machine Learning</h3>
-                    <p>Pursuing 3rd year of Artificial Intelligence and Machine Learning at Mumbai University.</p>
-                    <p>Satya has learned Python and completed internships based on Machine Learning using Python.</p>
-                    <button>Contact Mentor</button>
+                    <p>Pursuing 3rd year of Artificial Intelligence and Machine Learning </p>
+                    <p>Satya has learned Python and completed internships based on Machine Learning .</p>
+                    <button onclick="bookMentor3()">BOOK MENTOR</button>
                 </div>
             </div>
             <!-- Add more mentors as needed -->
         </section>
         <section class="mentor-grid">
-            <!-- Mentor 1 -->
+            <!-- Mentor 4 -->
             <div class="mentor-card">
-                <img src="img/mentor1.jpg" alt="Mentor Image">
+                <img src="img/mentor4.jpg" alt="Mentor Image">
                 <div class="mentor-info">
-                    <h2>Rohit Tiwari</h2>
-                    <h3>Web Developer</h3>
-                    <p>Pursuing 3rd year of Computer Science at Mumbai University.</p>
-                    <p>Rohit has done a full-time Web Development course and several internships.</p>
-                    <button>Contact Mentor</button>
+                    <h2>Omkar Yadav</h2>
+                    <h3>IOT (Internet of Things)</h3>
+                    <p>Pursuing 3rd year of Electronics and Computer Science at Mumbai University.</p>
+                    <p>Omkar has done a several Projects based on IOT and won prizes in many inter college events.</p>
+                    <button onclick="bookMentor4()">BOOK MENTOR</button>
                 </div>
             </div>
             
-            <!-- Mentor 2 -->
+            <!-- Mentor 5 -->
             <div class="mentor-card">
-                <img src="img/mentor2.jpg" alt="Mentor Image">
+                <img src="img/mentor5.jpg" alt="Mentor Image">
                 <div class="mentor-info">
-                    <h2>Aditya Singh</h2>
-                    <h3>Cyber Security</h3>
-                    <p>Pursuing 3rd year of Computer Science at Mumbai University.</p>
-                    <p>Aditya knows about cyber security and has done several internships based on it.</p>
-                    <a href="mentor1info.html">
-                        <button>Contact Mentor</button>
-                    </a>
+                    <h2>Manish Parmar</h2>
+                    <h3>Data Science </h3>
+                    <p>Pursuing 2rd year of Data Science at Mumbai University.</p>
+                    <p>Manish knows about Database management and he has completed  this course on it.</p>
+                   
+                        <button onclick="bookMentor5()">BOOK MENTOR</button>
+                
                 </div>
             </div>
 
-            <!-- Mentor 3 -->
+            <!-- Mentor 6 -->
             <div class="mentor-card">
-                <img src="img/mentor3.jpg" alt="Mentor Image">
+                <img src="img/mentor6.jpg" alt="Mentor Image">
                 <div class="mentor-info">
-                    <h2>Satya Prakash</h2>
-                    <h3>Machine Learning</h3>
-                    <p>Pursuing 3rd year of Artificial Intelligence and Machine Learning at Mumbai University.</p>
-                    <p>Satya has learned Python and completed internships based on Machine Learning using Python.</p>
-                    <button>Contact Mentor</button>
+                    <h2>Yash Tripathi </h2>
+                    <h3>Sports</h3>
+                    <p>Pursuing 3rd year of mechanical engineering at Mumbai University.</p>
+                    <p>Yash has achived several medals and certificates on district and state level.</p>
+                    <button onclick="bookMentor6()">BOOK MENTOR</button>
                 </div>
             </div>
             <!-- Add more mentors as needed -->
         </section>
+        <script src="script.js"></script>
     </main>
-    <script src="script.js"></script>
+ 
 </body>
 </html>

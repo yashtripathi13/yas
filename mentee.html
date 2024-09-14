@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentee Dashboard</title>
+    <link rel="stylesheet" href="mentee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Dashboard -->
+        <div class="sidebar">
+            <h2>Mentors</h2>
+            <ul class="mentor-list">
+                <li>
+                    <button class="dropdown-btn">Rohit Tiwari<i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="#" class="mentee-link" data-mentee="ripinjal" data-course="web dev basics" data-rating="4.5">ripinjal</a>
+                        <a href="#" class="mentee-link" data-mentee="prathmesh" data-course="web dev front-end" data-rating="4.0">prathmesh</a>
+                        <a href="#" class="mentee-link" data-mentee="pranjal" data-course="web dev backend" data-rating="4.3">pranjal</a>
+                    </div>
+                </li>
+                <li>
+                    <button class="dropdown-btn">Aditya Singh<i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="#" class="mentee-link" data-mentee="tanvi" data-course="basics of cyber security" data-rating="4.7">tanvi</a>
+                        <a href="#" class="mentee-link" data-mentee="murli" data-course="about cyber security" data-rating="4.2">murli</a>
+                        <a href="#" class="mentee-link" data-mentee="shubham" data-course="deep learning in cyber security" data-rating="4.6">shubham</a>
+                    </div>
+                </li>
+                <li>
+                    <button class="dropdown-btn">Satya Prakash<i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="#" class="mentee-link" data-mentee="selina" data-course="road map of machine learning" data-rating="4.9">selina</a>
+                        <a href="#" class="mentee-link" data-mentee="veer" data-course="basics of machine learning" data-rating="4.4">veer</a>
+                        <a href="#" class="mentee-link" data-mentee="aleena" data-course="advance machine learning" data-rating="4.1">aleena</a>
+                    </div>
+                </li>
+                <li>
+                    <button class="dropdown-btn">Omkar Yadav <i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="#" class="mentee-link" data-mentee="mit" introduction to IOT="introduction to IOT" data-rating="4.6">mit</a>
+                        <a href="#" class="mentee-link" data-mentee="Monica " data-course="projects on IOT" data-rating="4.8">Monica</a>
+                        <a href="#" class="mentee-link" data-mentee="chandini" data-course="real life applications" data-rating="4.5">chandini</a>
+                    </div>
+                </li>
+                <li>
+                    <button class="dropdown-btn">Manish Parmar<i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="#" class="mentee-link" data-mentee="abdul" data-course="DBMS" data-rating="4.3">abdul</a>
+                        <a href="#" class="mentee-link" data-mentee="Sara" data-course="data processing" data-rating="4.9">Sara </a>
+                        <a href="#" class="mentee-link" data-mentee="sachin" data-course="advance of DBMS " data-rating="4.2">sachin</a>
+                    </div>
+                </li>
+                <li>
+                    <button class="dropdown-btn">Yash Tripathi <i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="#" class="mentee-link" data-mentee="Ashwin" data-course="table tenis" data-rating="4.4">ashwin</a>
+                        <a href="#" class="mentee-link" data-mentee="virat" data-course="cricket" data-rating="4.5">virat</a>
+                        <a href="#" class="mentee-link" data-mentee="saurabh" data-course="batminton" data-rating="4.7">saurabh</a>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Back Button -->
+            <button class="back-button" onclick="goBack()">← Back</button>
+        </div>
+
+        <!-- Mentee Information Section -->
+        <div class="main-content">
+            <h2>Mentee Information</h2>
+            <div id="mentee-info">
+                <p>Select a mentee to view their details.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="mentee.js"></script>
+</body>
+</html>

@@ -42,21 +42,20 @@ nav .logo h1 {
     padding: 1o0px;
 }
 
+/* Adjust spacing if necessary */
 .nav-links li {
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
-.nav-links li a {
-    color: white;
+/* Style for the Mentee button */
+.nav-links a {
+    color: #fff; /* Adjust color as needed */
     text-decoration: none;
-    padding: 10px;
-    transition: background-color 0.3s ease;
+}
+.nav-links a:hover {
+    text-decoration: underline;
 }
 
-.nav-links li a:hover {
-    background-color: #6495ED; /* Light Blue */
-    border-radius: 5px;
-}
 
 /* Right side: Search Bar, Notification, Profile */
 .navbar-right {
@@ -108,8 +107,8 @@ nav .logo h1 {
 }
 
 .profile-icon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
@@ -357,4 +356,38 @@ footer {
 
 .hamburger-menu .fas.fa-bars {
     font-size: 36px; /* Increased size */
+}
+#features, #testimonials, #how-it-works, #cta {
+    padding: 40px 20px;
+    text-align: center;
+    
+}
+
+.feature-cards,/* Other styles remain unchanged */
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 300px; /* Optional: limits the width of each testimonial card */
+}
+
+.testimonial img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover; /* Ensures the image covers the 250x250 area without distortion */
+    border-radius: 50%; /* Optional: makes the image circular */
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: bottom;
 }

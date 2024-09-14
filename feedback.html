@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .stars input[type="radio"] {
+            display: none;
+        }
+
+        .stars label {
+            font-size: 40px;
+            color: #ccc;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .stars input[type="radio"]:checked ~ label {
+            color: #f5a623;
+        }
+
+        .stars label:hover, .stars label:hover ~ label {
+            color: #f5a623;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            resize: none;
+            min-height: 100px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4a90e2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #357ab8;
+        }
+
+        /* Feedback History Section */
+        .feedback-history {
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .feedback-item {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .feedback-item h4 {
+            margin: 0 0 10px;
+            font-size: 16px;
+        }
+
+        .feedback-item p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .feedback-item .stars {
+            justify-content: flex-start;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rate Your Experience</h1>
+        <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">&#9733;</label>
+        </div>
+        <textarea placeholder="Tell us more about your experience..."></textarea>
+        <button>Submit</button>
+
+        <!-- Feedback History Section -->
+        <div class="feedback-history">
+            <h1>Feedback History</h1>
+
+            <div class="feedback-item">
+                <h4>John Doe</h4>
+                <div class="stars">
+                    <label for="star">&#9733;</label>
+                    <label for="star">&#9733;</label>
+                    <label for="star">&#9733;</label>
+                    <label for="star">&#9733;</label>
+                    <label for="star">&#9734;</label>
+                </div>
+                <p>Great experience! The service was prompt and helpful.</p>
+            </div>
+
+            <div class="feedback-item">
+                <h4>Jane Smith</h4>
+                <div class="stars">
+                    <label for="star">&#9733;</label>
+                    <label for="star">&#9733;</label>
+                    <label for="star">&#9733;</label>
+                    <label for="star">&#9734;</label>
+                    <label for="star">&#9734;</label>
+                </div>
+                <p>Good service, but could be improved in terms of response time.</p>
+            </div>
+
+            <div class="feedback-item">
+                <h4>Michael Johnson</h4>
+                <div class="stars">
+                    <label for="star">&#9733;</label>
+                    <label for="star">&#9733;</label>
+                    <label for="star">&#9733;</label>
+                    <label for="star">&#9733;</label>
+                    <label for="star">&#9733;</label>
+                </div>
+                <p>Excellent! Will definitely recommend to others.</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

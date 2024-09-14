@@ -16,15 +16,15 @@
                     <i class="fas fa-bars"></i>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a href="#">Announcements</a></li>
+                            <li><a href="announcement.html">Announcements</a></li>
                             <li><a href="mentors.html">Mentors</a></li>
-                            <li><a href="#">Clubs</a></li>
-                            <li><a href="#">Feedback History</a></li>
+                            <li><a href="club.html">Clubs</a></li>
+                            <li><a href="feedback.html">Feedback History</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="logo">
-                    <h1>Mentorship Platform</h1>
+                    <h1>SEE-MenTo</h1>
                 </div>
             </div>
             <div class="navbar-right">
@@ -32,6 +32,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="mentors.html">Mentors</a></li>
+                    <!-- New Mentee Button -->
+                    <li><a href="mentee.html">Mentee</a></li>
                     <li><a href="book-session.html">Book a Session</a></li>
                 </ul>
                 <div class="search-container">
@@ -39,10 +41,10 @@
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </div>
                 <div class="notification">
-                    <a href="#"><i class="fas fa-bell"></i></a>
+                    <a href="announcement.html"><i class="fas fa-bell"></i></a>
                 </div>
                 <div class="profile-dropdown">
-                    <img src="img/profile.png" alt="Profile Picture" class="profile-icon">
+                    <img src="img/profile.jpg" alt="Profile Picture" class="profile-icon">
                     <div class="dropdown-content">
                         <a href="login.html">Login</a>
                         <a href="sign-up.html">Sign Up</a>
@@ -59,10 +61,94 @@
         <!-- New 'Join as a Mentor' button -->
         <a href="mentor-login.html" class="cta-button">Join as a Mentor</a>
     </section>
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Platform Features</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Find a Mentor</h3>
+                <p>Easily connect with experienced mentors.</p>
+            </div>
+            <div class="card">
+                <h3>Flexible Scheduling</h3>
+                <p>Book sessions at your convenience.</p>
+            </div>
+            <div class="card">
+                <h3>Peer-to-Peer Learning</h3>
+                <p>Learn with peers through discussions and activities.</p>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 College Peer Tutoring and Mentorship Platform</p>
-    </footer>
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial">
+                <p>"SEE-MenTo helped me find the perfect mentor!"</p>
+                <img src="img/avtar1.webp" alt="User 1">
+            </div>
+            <div class="testimonial">
+                <p>"I’ve learned so much from the peer sessions."</p>
+                <img  src="img/avtar2.png" alt="User 2">
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section id="how-it-works">
+        <h2>How SEE-MenTo Works</h2>
+        
+            <li>Sign up and create a profile.</li>
+            <li>Browse through available mentors and peers.</li>
+            <li>Schedule sessions and start learning!</li>
+      
+    </section>
+
+    <!-- CTA Section in HTML -->
+<section id="cta" class="cta-section">
+    <h2>Ready to Join?</h2>
+    <button class="cta-btn" onclick="window.location.href='login.html'">Get Started Now</button>
+</section>
+
+<!-- CSS to style the button -->
+<style>
+    /* CTA Section Styling */
+    .cta-section {
+        text-align: center;
+        padding: 40px 0;
+        background-color: #f3f4f6; /* Light grey background */
+    }
+
+    /* CTA Button Styling */
+    .cta-btn {
+        padding: 15px 30px;
+        background-color: #007bff; /* Blue background */
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    }
+
+    /* Hover Effect for Button */
+    .cta-btn:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+        transform: scale(1.05); /* Slightly enlarge the button on hover */
+    }
+
+    /* CTA Heading */
+    .cta-section h2 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+</style>
+
+    
 
     <script src="script.js"></script>
 </body>

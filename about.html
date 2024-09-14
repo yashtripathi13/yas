@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="styles.css">      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <title>About Us</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #007bff;
+        
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            height: 30px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .contact-section {
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 600px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .contact-item i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+
+        .contact-item a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <!-- Hamburger Menu Icon (Left) -->
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="announcement.html">Announcements</a></li>
+                            <li><a href="mentors.html">Mentors</a></li>
+                            <li><a href="club.html">Clubs</a></li>
+                            <li><a href="feedback.html">Feedback History</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <h1>SEE-MenTo</h1>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mentors.html">Mentors</a></li>
+                    <!-- New Mentee Button -->
+                    <li><a href="mentee.html">Mentee</a></li>
+                    <li><a href="book-session.html">Book a Session</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." id="search-bar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="notification">
+                    <a href="announcement.html"><i class="fas fa-bell"></i></a>
+                </div>
+                <div class="profile-dropdown">
+                    <img src="img/profile.jpg" alt="Profile Picture" class="profile-icon">
+                    <div class="dropdown-content">
+                        <a href="login.html">Login</a>
+                        <a href="sign-up.html">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="contact-section">
+        <h2>Get in Touch</h2>
+
+        <div class="contact-item">
+            <i class="fas fa-phone"></i> 
+            Mobile: <a href="tel:+91 7507349755">+91 7507349755</a>
+        </div>
+        
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i> 
+            Email: <a href="mailto:mentorship@see-mento.com.in">mentorship@see-mento.com.in</a>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

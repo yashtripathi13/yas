@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mentor-page {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+.mentor-header {
+    text-align: center;
+}
+
+.follow-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.follow-btn:hover {
+    background-color: #218838;
+}
+
+.chat-box {
+    margin-top: 20px;
+}
+
+.chat-box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.send-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background-color: #0056b3;
+}
+
+.meeting-links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.meeting-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.zoom-btn {
+    background-color: #f44336;
+}
+
+.google-meet-btn {
+    background-color: #4285F4;
+}
+
+.zoom-btn:hover, .google-meet-btn:hover {
+    opacity: 0.8;
+}
